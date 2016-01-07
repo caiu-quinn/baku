@@ -6,8 +6,8 @@
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
             <div class="date">
               Rêve de {{ post.author }},
-              datant du {{ post.created_date }}.
-              Publié le {{ post.published_date }}.
+              datant de {{ post.created_date }}.
+              Publié en {{ post.published_date }}.
             </div></br>
             <p>{{ post.text|linebreaks }}</p>
         </div>
