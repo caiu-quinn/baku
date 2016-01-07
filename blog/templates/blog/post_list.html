@@ -8,10 +8,8 @@
               Rêve de {{ post.author }},
               datant du {{ post.created_date }}.
               Publié le {{ post.published_date }}.
-            </div>
-            <div class="dream">
+            </div></br>
             <p>{{ post.text|linebreaks }}</p>
-            </div>
         </div>
     {% endfor %}
 {% endblock content %}
