@@ -9,6 +9,12 @@
     </head>
     <body>
         <div class="page-header">
+            <a href="admin/" class="top-menu" title="Utilisateur"><span class="glyphicon glyphicon-user"></span></a>
+            {% if user.is_authenticated %}
+            <a href="{% url 'post_new' %}" class="top-menu" title="Nouveau rêve"><span class="glyphicon glyphicon-plus"></span></a>
+            <a href="admin/logout" class="top-menu" title="Se déconnecter"><span class="glyphicon glyphicon-off"></span></a>
+            {% endif %}
+            <a href="mailto:caiu@caiu.fr" class="top-menu" title="Pour nous contacter !"><span class="glyphicon glyphicon-envelope"></span></a>
             <h1><a href="/">Baku, collectionneur de rêves</a></h1>
         </div>
         <div class="content container">
